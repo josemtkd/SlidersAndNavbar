@@ -1,26 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">WebSiteName</a>
-            </div>
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Page 1</a></li>
-              <li><a href="#">Page 2</a></li>
-              <li><a href="#">Page 3</a></li>
-            </ul>
-        </div>
-    </nav>
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Title -->
-        <title>Bootstrap Touch slider</title>
+        <title>Bandanas Chile - Fugaz Store</title>
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="all">
 
@@ -35,6 +20,44 @@
     </head>
 
     <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Fugaz Store</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="file:///C:/Users/Raze/Documents/GitHub/SlidersAndNavbar/index.html#">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bandanas<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Alternativas</a></li>
+                        <li><a href="#">Calaveras</a></li>
+                        <li><a href="#">Camuflaje</a></li>
+                        <li><a href="#">Etnicas</a></li>
+                        <li><a href="#">Lisas</a></li>
+                        <li><a href="#">Quijada</a></li>
+                        <li><a href="#">Quijada con Cuello</a></li>
+                        <li><a href="#">Sicodelicas</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Ventas por Mayor</a></li>
+                  </ul>
+                   <ul class="nav navbar-nav navbar-right">
+                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                     <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                   </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
 
 
         <!--  
@@ -45,7 +68,7 @@
         
         
         -->
-
+        
         <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="false" >
 
             <!-- Indicators -->
@@ -65,15 +88,17 @@
                     <img src="images/Quijada.jpeg" alt="Bootstrap Touch Slider"  class="slide-image"/>
                     <div class="bs-slider-overlay"></div>
 
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="row">
-                            <!-- Slide Text Layer -->
-                            <div class="slide-text slide_style_left">
-                                <h1 data-animation="animated zoomInRight">Bootstrap Carousel</h1>
-                                <p data-animation="animated fadeInLeft">Bootstrap carousel now touch enable slide.</p>
-                                <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
-                                <a href="http://bootstrapthemes.co/" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">select two</a>
-                            </div>
+                            <div class= "col-xs-12">
+                                <!-- Slide Text Layer -->
+                                <div class="slide-text slide_style_left">
+                                    <h1 data-animation="animated zoomInRight">Bootstrap Carousel</h1>
+                                    <p data-animation="animated fadeInLeft">Bootstrap carousel now touch enable slide.</p>
+                                    <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
+                                    <a href="http://bootstrapthemes.co/" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">select two</a>
+                                </div>
+                            </div>    
                         </div>
                     </div>
                 </div>
@@ -141,7 +166,7 @@
         <script type="text/javascript">
             $('#bootstrap-touch-slider').bsTouchSlider();
             $('.carousel-inner').carousel({
-              interval: 20000
+              interval: 10000
             })
         </script>
 
